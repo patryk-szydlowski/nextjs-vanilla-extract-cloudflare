@@ -8,9 +8,12 @@
     "check:prettier": "prettier . --check --cache",
     "check:typescript": "tsc --noEmit",
     "start:dev": "next dev",
-    "start:prod": "next start"
+    "start:prod": "npm run build && next start"
   },
   "dependencies": {
+    "@vanilla-extract/css": "1.7.2",
+    "@vanilla-extract/recipes": "0.2.5",
+    "@vanilla-extract/sprinkles": "1.4.1",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -19,6 +22,7 @@
     "@tsconfig/next": "1.0.2",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "@vanilla-extract/next-plugin": "2.0.2",
     "eslint": "8.19.0",
     "eslint-config-canonical": "35.1.4",
     "eslint-config-next": "12.2.2",
