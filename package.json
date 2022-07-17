@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-vanilla-extract-cloudflare",
+  "version": "0.0.0-development",
+  "scripts": {
+    "build": "next build",
+    "check": "npm-run-all --parallel --print-label check:*",
+    "check:eslint": "eslint . --cache",
+    "check:prettier": "prettier . --check --cache",
+    "check:typescript": "tsc --noEmit",
+    "start:dev": "next dev",
+    "start:prod": "next start"
+  },
+  "dependencies": {
+    "next": "12.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@tsconfig/next": "1.0.2",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.19.0",
+    "eslint-config-canonical": "35.1.4",
+    "eslint-config-next": "12.2.2",
+    "eslint-plugin-prefer-arrow-functions": "3.1.4",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4",
+    "wrangler": "2.0.22"
+  }
+}

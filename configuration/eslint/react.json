@@ -1,0 +1,8 @@
+{
+  "overrides": [
+    {
+      "extends": ["canonical/react", "canonical/jsx-a11y"],
+      "files": ["*.tsx"]
+    }
+  ]
+}

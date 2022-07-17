@@ -1,0 +1,34 @@
+{
+  "overrides": [
+    {
+      "extends": [
+        "next/core-web-vitals",
+        "canonical",
+        "canonical/typescript",
+        "canonical/module",
+        "canonical/prettier"
+      ],
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "plugins": ["simple-import-sort", "prefer-arrow-functions"],
+      "rules": {
+        "import/extensions": "off",
+        "import/no-anonymous-default-export": "off",
+        "import/order": "off",
+        "prefer-arrow-functions/prefer-arrow-functions": [
+          "error",
+          {
+            "classPropertiesAllowed": true,
+            "disallowPrototype": true,
+            "returnStyle": "implicit",
+            "singleReturnOnly": false
+          }
+        ],
+        "simple-import-sort/exports": "error",
+        "simple-import-sort/imports": "error"
+      }
+    }
+  ]
+}

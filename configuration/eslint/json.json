@@ -1,0 +1,44 @@
+{
+  "overrides": [
+    {
+      "extends": ["canonical/json"],
+      "files": ["*.json"],
+      "rules": {
+        "jsonc/array-bracket-newline": ["error", "consistent"],
+        "jsonc/array-element-newline": ["error", "consistent"],
+        "jsonc/object-curly-spacing": ["error", "always"]
+      }
+    },
+    {
+      "files": ["package.json"],
+      "rules": {
+        "jsonc/sort-keys": [
+          "error",
+          {
+            "order": [
+              "name",
+              "description",
+              "version",
+              "private",
+              "sideEffects",
+              "author",
+              "repository",
+              "readme",
+              "bugs",
+              "type",
+              "engines",
+              "scripts",
+              "dependencies",
+              "devDependencies"
+            ],
+            "pathPattern": "^$"
+          },
+          {
+            "order": { "type": "asc" },
+            "pathPattern": ".*"
+          }
+        ]
+      }
+    }
+  ]
+}

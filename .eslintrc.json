@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "./configuration/eslint/typescript",
+    "./configuration/eslint/react",
+    "./configuration/eslint/config-files",
+    "./configuration/eslint/json",
+    "./configuration/eslint/yaml"
+  ]
+}

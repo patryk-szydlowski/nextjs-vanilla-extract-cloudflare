@@ -1,0 +1,11 @@
+{
+  "overrides": [
+    {
+      "extends": ["canonical", "canonical/node", "canonical/prettier"],
+      "files": ["*.config.js"],
+      "rules": {
+        "jsdoc/valid-types": "off"
+      }
+    }
+  ]
+}
